@@ -89,7 +89,7 @@ for i in 0 ... loopTimes {
 }
 let buildLabel = builder.build()
 let buildInterval = Date().timeIntervalSince(buildStart)
-print(buildInterval) // 2.15秒 <- 時間較長
+print(buildInterval) // 2.15秒
 
 // keyPath 設值
 let keyPathLabel = UILabel()
@@ -98,4 +98,4 @@ for i in 0 ... loopTimes {
     keyPathLabel.set(\.text, to: "\(i)")
 }
 let keyPathBuildInterval = Date().timeIntervalSince(keyPathBuildStart)
-print(keyPathBuildInterval) // 1.33秒 <- 較dynamicMemberLookup快
+print(keyPathBuildInterval) // 1.33秒
